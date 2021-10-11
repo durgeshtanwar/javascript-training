@@ -1,122 +1,139 @@
-// day 1
-
-// console.log('Durgesh Tanwar');
-// let js="amazing";
-// if(js==="amazin"){
-//     alert('its amazing');
-// }
-// else{
-//     alert("its bori
-
-// day 2
-// console.log(9);
-// console.log('Arvind');
-// console.log("Manish");
-// console.log(32.9);
+// Operators
+//  arithmetic Operators
+//*  addition (+) operators
+let a = 5;
+let b = 10;
+console.log(a+b);
 
 
-// lets talk about variables 
-// let firstName = "Prem";
+//* Subtraction (-) operators
+
+let firstNumber = 10;
+let secondNumber = 15;
+
+// console.log(secondNumber - firstNumber);
+//* Multiplication (*) operators
+
+// console.log('multiplication = '+a*b);
+// * division  
+// console.log('division = ' + b/a);
+// * Modulus Operator 
+// ? this modulus operator gets the result we get the remaining of the given division.
+// ? example of positive divident
+//  console.log (12 % 5);
+// ? 1 % -2 = 1
+// ? 1 % 2  =  1
+// ? 2 % 3  =  2
+// ? 5.5 % 2 = 1.5
+
+
+//! example of negetive divident
+//? -12 % 5 // -2 
+//? -1 % 2  // -1
+//? -4 % 2  // -0
+
+//* Exponentiation Operator (**) 
+// ? this operator gets the power of the value for example when we say 2's power 2 is 4 or 2's power 3 is 8
+console.log('** operator 12 ki power 4 = '+12**4); 
+
+// * Increment (++) and decrement (--) operator
+// ? this operator adds one to the value
+//todo example of increment
+
+// let firstVal = 10;
+// console.log(firstVal++);
+// console.log(firstVal);
+
+// console.log(++firstVal);
+
+// todo example of the decrement operator
+
+// console.log(firstVal--);
+// console.log(firstVal);
+// console.log(--firstval);
+
+//! String Operators
+//* Concatenation in javascript also happens with + operators
+// let firstName = "Nandini";
 // let lastName = "Sankhla";
-// let address = "B-50 A Murlidhar vyas Nagar Karmisar road Bikaner."
+
+// console.log(firstName + lastName);
+//  console.log(firstName + ' ' + lastName);
+
+// let x = 5 + 5;
+// let y = "5" + 5;
+// let z = "Hello" + 5;
+
+// console.log(x,y,z);
 
 
-// console.log('Shyamlal');
-// console.log(22);
-// console.log("Mohta Chowk");
-// console.log(45+99);
+//* assignment Operators
+// ? assignment operators assign value to variables
+// ? they are of different types
+// todo first one is = (equal)
 
+// examples 
+let a = 7;
+let b = a;
 
-// let firstName = "Durgesh";
-// let lastName = "Kapoor";
+// ? += 
+console.log(a += b) //? it is same as a = a + b;
 
-// console.log(firstName);
+// -=
+console.log(a -= b); //? it is same as a = a - b;
 
-// let address = "B-50 A Murlidhar vyas Nagar Karmisar road bikaner";
-////////////////////////////////////////////////////
+// todo *=
+console.log(a*=b); //? same as a = a * b;
 
-// Data types.
-// there are 2 types of data types that
-//  1 primitive and other is objects.
-//  objects are written in the curly brackets.
-// example
-// let a = {
-//     name:"John",
-//     age:25,
-//     city: "London",
-// };
+// todo /=
+console.log(a/=b); //? same as a = a / b;
 
-// any data type which is not objects are primitive type of data types.
-// there are 7 types of primitive datatypes.
-// 1 Number 
-// 2 String
-// 3 boolean
-// 4 undefined
-// 5 null
-// 6 bigInt (Larger integers than the Number type can hold)
-// 7 Symbol (not very important or useful for now. it was introduced in ES 2020)
+// todo %= //
+console.log(a%=b); //? same as a = a % b;
 
-//  Dynamic typing: Javascript support dynamic typing which means we do manually define the datatypes data types are determined automatically
-// 1 Numbers are always decimal types.
-    // example let a = 23; it is equal to 23.0
-    
-// 2 String is a sequence of charecters.
-// 3. boolean is true or false
+// todo **=
+console.log(a**=b); //? same as a = a**b;
 
-// there is a difference between value and variable that a variables do not have data types the values have 
+let x = 10;
+x += 5;
 
-//  Dynamic typing example let a =
-// let fname = "Mark";
-// console.log(fname);
+// * JavaScript Comparison Operators
 
-// fname = 45.55;
-// console.log(fname);
+// * ==	equal to
+// * ===	equal value and equal type
+//* !=	not equal
+//* !==	not equal value or not equal type
+//* >	greater than
+//* <	less than
+//* >=	greater than or equal to
+//* <=	less than or equal to
 
-// console.log(typeof(34));
-// console.log(typeof(true));
-// var declaredButNotUsed;
-// console.log(typeof(declaredButNotUsed));
-// console.log(typeof(null));
-// console.log(typeof('Jai Mata Di'));
+// ==	equal to	x == 8	false	
+// x == 5	true	
+// x == "5"	true	
+// ===	equal value and equal type	x === 5	true	
+// x === "5"	false	
+// !=	not equal	x != 8	true	
+// !==	not equal value or not equal type	x !== 5	false	
+// x !== "5"	true	
+// x !== 8	true	
+// >	greater than	x > 8	false	
+// <	less than	x < 8	true	
+// >=	greater than or equal to	x >= 8	false	
+// <=	less than or equal to	x <= 8	true
 
-// let javascriptIsFun = true;
-// console.log(javascriptIsFun);
-// javascriptIsFUn = 'Yes';
+// todo Javascript Logical operators
 
-// String 
-// string is the sequence of the charecters or numbers but it should be inside double quote or single quote " " ' ';
-// let a = "school";
-// let b = 22;
-// Booleam
+//* && Logical and not
+//* || logical or
+//* ! logical not
 
-let isTrueOrFalse = true;
-let falseOrTrue = false;
+// todo JavaScript Type Operators
+// typeof (Returns the type of a variable)
+// instanceof (Returns true if an object is an instance of an object type)
 
-let a = 20;
-let b = null;
+// Conditional Operators (Ternary Operators)
 
-
-// console.log(b);
-
-//  console.log(typeof('gaurav'));
-console.log(typeof(b));
-// console.log(typeof(true));
-
-// let input = "abhishek";
-
-// if(typeof(input)=='string'){
-//     console.log('string');
-// }
-
-
-let name = "Shyamlal";
-console.log(typeof(name));
-
-name = 22;
-console.log(typeof(name));
-
-let js ="Javascript is fun";
-console.log(js);
-js = 22510;
-console.log(js);
+// variablename = (condition) ? value1:value2 
+// let voteable = (age > 18) ? 'he can vote' : 'He can not';
 
