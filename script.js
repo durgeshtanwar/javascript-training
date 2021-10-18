@@ -11,7 +11,7 @@ let now = 2021;
 console.log(now - 1989 > now - 2000 );
 // why subtraction happened before the comparision?
 // This is made possible because of operator precedence
-
+console.log((4+4)*10);
 console.log(3+4*5);
 // ? What will be the output of this?
 
@@ -24,20 +24,21 @@ let b;
 
 console.log(a = b = 5);
 // expected output: 5
-
+console.log(10-5-4);
 // In below example if the operator op2 have higher precedence then op2 will be solved first.
 // a OP1 b OP2 c
-
+a = 5;
+2**3;
 console.log(3 + 10 * 2);   // logs 23
 console.log(3 + (10 * 2)); // logs 23 because parentheses here are superfluous
 console.log((3 + 10) * 2); // logs 26 because the parentheses change the order
 
-function echo(name, num) {
-    console.log("Evaluating the " + name + " side");
-    return num;
-}
-// Notice the division operator (/)
-console.log(echo("left", 6) / echo("right", 2));
+// function echo(name, num) {
+//     console.log("Evaluating the " + name + " side");
+//     return num;
+// }
+// // Notice the division operator (/)
+// console.log(echo("left", 6) / echo("right", 2));
 
 // let mark_mass, john_mass, john_height, mark_height;
 // mark_mass = 78;
@@ -48,12 +49,16 @@ console.log(echo("left", 6) / echo("right", 2));
 // console.log ('Mark\'s BMI is ' + mark_bmi);
 // let john_bmi = john_mass / (john_height*john_height);
 // console.log ('John\'s BMI is ' + john_bmi);
-
+// console.log(mark_bmi>john_bmi);
 
 // String literals 
 const firstName = "Durgesh";
 const lastName = "Tanwar";
 
+console.log("name is \' Durgesh \'" + firstName + ",\n lastName is" + lastName);
+console.log(`my name is ${firstName} and my age is ${now - 1974} `);
+
+
 console.log(`I am ${firstName} ${lastName} and my age is ${now - 1988}`);
-console.log(`Bharat humko jaan se pyara hai 
-sabse pyara gulistan hamara hai`);
+console.log(`Bharat humko jaan se 'pyara hai 
+sabse pyara' gulistan hamara hai`);
