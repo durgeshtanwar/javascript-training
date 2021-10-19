@@ -1,78 +1,72 @@
-// conditions
-// what are the conditions? 
+//* Type Conversion and type coersions
+// Some times we may be in the situation where we need to change the data type of the value.
+// for example suppose we want to take birth year as the value from the input box. this input will take value as a string.
+// if we want to add value to this input it will be a weird value.
+
+//? let birthYear = '1990';
+// Here we see that birth year have a value of string now if we want to add 18 to this number to see when the user will be 18 years old.
+// so what we do is add 18 to this number.
+//? console.log(birthYear+18);
+// instead of adding 18 to birthYear value it will concatenate the value.
+// So what is the solution ? solution is to use type conversions
+// we use Number() function to convert string into number.
+//?console.log(Number(birthYear), birthYear);
+// So if we have to add the 18 into the birthYear we will do it as below.
+//?console.log(Number(birthYear) + 18);
+// we can convert numbers to string too.
+//? console.log(String(2009));
+// NaN - Not a Number
+// if we try to convert non numbers to the Number we get the following output.
+//? console.log(Number('Raj'));
+//? console.log(typeof(NaN));
+
+// * Type Coersional
+// Javascript also converts the values data types automatically under the hood. let's see how it is done.
+
+//? console.log('Shyamlal is ' + 20 + ' Years Old');
+//? console.log('200' - 142); //? Here it converted the string into the number and printed the output.
+//? console.log('140'-'14');
+//? console.log('12'*12);
+//? console.log('12'/'6');
+
+// only + operator converts everything to the string and concatenate the values.
+//?  let n = "25";
+//?  n=n+1;
+//?  console.log(n-10);
+//* Truthy and falsy values.
+// ! Truthy and falsy values are those who are initially true but when we convert them into the boolean values they converts into false values.
+// ? there are five types of falsy values. 
+//? 1. 0,
+//? 2 " " (empty string);
+//? 3 undefined values.
+//? 4 NaN.
+//? 5 null  
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined)); 
+console.log(Boolean(NaN));
+console.log(Boolean(null));
+// console.log(null);
+console.log(Boolean('Durgesh'));
+
+
+// Practically we never use this type conversion in explicitly. It happens by type coersion 
+// Boolean type coersion happens in the logical operators and in logical context.
 // example
-// program to determine if the person is eligible for the voting?
-let person = "Nandini";
-let her_age = 11;
-console.log(`Is ${person}'s age is good for the voting lets'find out`);
-console.log(`So her age is ${her_age} 🤔`);
-if(her_age >= 18){
-    console.log(`yep! ${person} can vote because her age is ${her_age} 😊`);
-}
-else if(her_age >= 12) {
-    // console.log(`Sorry! ${person} your age is ${her_age} and you have ${18-her_age} years left for the voting. 😢`);
-    console.log('she is more the 12');
+// let runs = 0;
+// if(runs){
+//     console.log('Great you made some runs');
+// }
+// else {
+//     console.log('you were out on Zero!');
+// }
+
+// THis can also throw an error 
+let height = 0;
+if(height){
+    console.log("you get an height!");
 }
 else{
-    
+    console.log('height is undefined');
 }
-
-
-
-
-// const birthYear = 2002;
-// if(birthYear<2000){
-//     console.log('this person was born in 20th Century.')
-// }
-// else {
-//     console.log(`this person was born in 21 century`);
-// }
-
-// let value = 10;
-// if(value%2==0){
-//     console.log(`even`);
-// }
-// else {
-//     console.log('Odd');
-// }
-// Control Structure
-
-
-
-
-
-// 1 Write a Javascript program to find maximum between two numbers.
-// 2 Write a Javascript program to find maximum between three numbers.
-// 3 Write a Javascript program to check whether a number is negative, positive or zero.
-// 4 Write a Javascript program to check whether a number is divisible by 5 and 11 or not.
-// 5 Write a javascript program to check whether a number is even or odd.
-// 6 Write a javascript program to check whether a year is leap year or not.
-// 7 Write a javascript program to check whether a character is alphabet or not.
-// 8 Write a javascript program to input any alphabet and check whether it is vowel or consonant.
-// 9 Write a javascript program to input any character and check whether it is alphabet, digit or special character.
-// 10 Write a Javascript program to check whether a character is uppercase or lowercase alphabet.
-// 11 Write a Javascript program to input week number and print week day.
-// 12 Write a Javascript program to input month number and print number of days in that month.
-// 14 Write a Javascript program to count total number of notes in given amount.
-// 15 Write a Javascript program to input angles of a triangle and check whether triangle is valid or not.
-// 16 Write a Javascript program to input all sides of a triangle and check whether triangle is valid or not.
-// 17 Write a Javascript program to check whether the triangle is equilateral, isosceles or scalene triangle.
-// 18 Write a Javascript program to find all roots of a quadratic equation.
-// 19 Write a Javascript program to calculate profit or loss.
-// 20 Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
-//      Percentage >= 90% : Grade A
-//      Percentage >= 80% : Grade B
-//      Percentage >= 70% : Grade C
-//      Percentage >= 60% : Grade D
-//      Percentage >= 40% : Grade E
-//      Percentage < 40% : Grade F
-// 21 Write a Js program to input basic salary of an employee and calculate its Gross salary according to following:
-//      Basic Salary <= 10000 : HRA = 20%, DA = 80%
-//      Basic Salary <= 20000 : HRA = 25%, DA = 90%
-//      Basic Salary > 20000 : HRA = 30%, DA = 95%
-// Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
-//       For first 50 units Rs. 0.50/unit
-//       For next 100 units Rs. 0.75/unit
-//       For next 100 units Rs. 1.20/unit
-//       For unit above 250 Rs. 1.50/unit
-//       An additional surcharge of 20% is added to the bill
