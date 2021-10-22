@@ -45,3 +45,65 @@ console.log(!has_driverlicence);
 //     alert(`digit ${c} is biggest amonng three digits`);
 // }
 
+// switch case
+// switch case is like a switch, for example we have many switches in our home. Fan switch will work for fan and light for light.
+// same concept is there for programming as well. we have to define switch condition and then we have to set the cases.
+
+// switch(expression) {
+//     case x:
+//       // code block
+//       break;
+//     case y:
+//       // code block
+//       break;
+//     default:
+//       // code block
+//   }
+
+let day;
+// this function will return the day of the week for example sunday is 0 and saturday is 6
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+console.log(day);
+
+// When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+// This will stop the execution inside the switch block.
+
+// It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+// * Default case
+
+// switch (new Date().getDay()) {
+//     case 6:
+//       text = "Today is Saturday";
+//       break;
+//     case 0:
+//       text = "Today is Sunday";
+//       break;
+//     default:
+//       text = "Looking forward to the Weekend";
+//   }
+
+// * Common Code Blocks
+
