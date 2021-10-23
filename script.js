@@ -1,15 +1,15 @@
 // Comparision operators (difference between == and ===)
-let age = 18;
-if(age===18) console.log('adult');
+// let age = 18;
+// if(age===18) console.log('adult');
 
-// strict comparision operator is === and loose is ===
+// // strict comparision operator is === and loose is ===
 
-if(age===18){
-    console.log('user is adult (strict mode)');
-}
-else if(age==18) {
-    console.log('user is adult(loose mode)');
-}
+// if(age===18){
+//     console.log('user is adult (strict mode)');
+// }
+// else if(age==18) {
+//     console.log('user is adult(loose mode)');
+// }
 
 // let favourite =  prompt('What is your favourite Number?');
 //console.log(typeof favourite);
@@ -23,11 +23,11 @@ else if(age==18) {
 
 
 // * Logical Operators.
-let has_driverlicence = true;
-let has_goodVision = false;
-console.log(has_driverlicence && has_goodVision);
-console.log(has_driverlicence || has_goodVision);
-console.log(!has_driverlicence);
+// let has_driverlicence = true;
+// let has_goodVision = false;
+// console.log(has_driverlicence && has_goodVision);
+// console.log(has_driverlicence || has_goodVision);
+// console.log(!has_driverlicence);
 
 // write a program to find bigger of three digits;
 
@@ -45,6 +45,7 @@ console.log(!has_driverlicence);
 //     alert(`digit ${c} is biggest amonng three digits`);
 // }
 
+
 // switch case
 // switch case is like a switch, for example we have many switches in our home. Fan switch will work for fan and light for light.
 // same concept is there for programming as well. we have to define switch condition and then we have to set the cases.
@@ -61,30 +62,50 @@ console.log(!has_driverlicence);
 //   }
 
 let day;
+let value = 4;
 // this function will return the day of the week for example sunday is 0 and saturday is 6
-switch (new Date().getDay()) {
+switch (value) {
   case 0:
     day = "Sunday";
     break;
   case 1:
     day = "Monday";
-    break;
+    // break;
   case 2:
     day = "Tuesday";
-    break;
+    // break;
   case 3:
     day = "Wednesday";
     break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case  6:
-    day = "Saturday";
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+default :
+console.log('this day is not possible');
+
 }
 console.log(day);
+
+let x,y;
+x=10; y=15;
+let operation = "multiplication";
+switch(operation) {
+    case 'multiplication':
+        console.log(x*y);
+        break;
+    case 'add' : 
+    console.log(x+y);  
+    break;  
+
+}
+
+
+
 
 // When JavaScript reaches a break keyword, it breaks out of the switch block.
 
@@ -107,3 +128,21 @@ console.log(day);
 
 // * Common Code Blocks
 
+
+let vaar = "sunda";
+switch(vaar) {
+    case "monday" :
+    case "tuesday" :
+    case "wednesday" :
+    case "thursday" :
+    case "friday" :                
+        console.log('working day');
+        break;
+   case "saturday" :
+       case "sunday" :
+           console.log('its holiday!');
+           break;
+ default:
+     console.log('invalid day');     
+}
+    
