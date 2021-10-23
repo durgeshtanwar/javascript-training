@@ -29,9 +29,9 @@ function addition (x,y) {
     return x+y;
 }
 
-console.log(addition(54,89));
-console.log(addition(587,985));
-console.log(addition(335,874));
+// console.log(addition(54,89));
+// console.log(addition(587,985));
+// console.log(addition(335,874));
 
 // think function of like a machine where you give raw material (inputs) and get the finished goods()
 
@@ -40,9 +40,43 @@ console.log(addition(335,874));
 function square(num){
     return num**2;
 }
-console.log(square(22));
-console.log(square(98));
+// console.log(square(22));
+// console.log(square(98));
 
 // we can store the function result into the variable too.
 let x = square(5);
 console.log(x);
+let volume = 0;
+function tvVolumeUp(){
+return volume++;
+}
+tvVolumeUp();
+tvVolumeUp();
+tvVolumeUp();
+tvVolumeUp();
+// console.log(volume);
+
+function tvVolumeDown(){
+   if(volume!== 0) {
+     return volume--;
+   }
+   else {
+       volume = 0;
+   }
+}
+tvVolumeDown();
+console.log(`volume is ${volume}`);
+tvVolumeDown();
+console.log(`volume is ${volume}`);
+tvVolumeDown();
+console.log(`volume is ${volume}`);
+tvVolumeUp();
+console.log(`volume is ${volume}`);
+tvVolumeUp();
+console.log(`volume is ${volume}`);
+
+
+tvVolumeUp();
+console.log(`volume is ${volume}`);
+
+// example of the functions below
