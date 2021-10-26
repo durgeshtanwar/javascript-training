@@ -16,6 +16,24 @@
 //? function functionName(parameters) {
   // ?  code to be executed
 //?    }
+function age(birthYear) {
+    return 2021-birthYear;
+
+}
+
+let age1 = age(2000);
+console.log(`my age is ${age1}`);
+
+// p * (i/100) + 100
+function simpleInterest(principalAmount, rate) {
+    return principalAmount * (rate/100);
+}
+
+let finalAmount = simpleInterest(1000,10) + 100;
+console.log(finalAmount);
+
+console.log(simpleInterest(2000,15.7));
+
 // todo it is called the declaration of the function.
 function myName(){
     console.log('Gaurav Sankhla');
@@ -23,6 +41,14 @@ function myName(){
 // it is called Calling / Invoking / Running
 myName();
 myName();
+
+function yourName(name){
+    console.log(name);
+}
+let name = 'Bablu';
+console.log(name);
+yourName('Shyamlal');
+yourName('Durgesh');
 
 // todo return keyword
 // ? return keyword returns the value on which further logic can be applied.
@@ -59,7 +85,7 @@ tvVolumeUp();
 tvVolumeUp();
 tvVolumeUp();
 tvVolumeUp();
-// console.log(volume);
+ console.log(volume);
 
 function tvVolumeDown(){
    if(volume!== 0) {
@@ -95,6 +121,12 @@ function calcAge1(birthYear){
 console.log(calcAge1(1988));
 // parameter is the placeholder and argument is the actual value;
 
+let calcSquare = function(val) {
+    return val**2;
+}
+
+console.log(calcSquare(2));
+
 // function expression 
 
 const calcAge2 = function(birthYear){
@@ -106,8 +138,11 @@ console.log(calcAge2(1954));
 // * Arrow Function
 
 // added in es6 a faster and shorter method to write a function.
-
+const age2 = () => {return 2021 - 2000};
 const by = (year) => { return 2022-year }
+const by1 = year => 2022 - year;
+
+
 const birthYear = (year) => {2021 - 2000};
 //  if there is only one line that is just return we can further shorten this.
 const birtYear = year => 2021 - year; 
@@ -126,7 +161,7 @@ const birtYear = year => 2021 - year;
          return volume--
      }
      else {
-         volume = 0;
+      return volume = 0;
      }
  }  
 
