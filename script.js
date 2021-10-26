@@ -1,9 +1,8 @@
 'use strict';
 
-// let hasVotersCard = true;
-// if(hasVotersCard){
-//     console.log('user can vote');
-// }
-// strict mode also helps us to avoid making variable names to those words which in future javascript may use in their langauge.
-// example
-// let interface = true;
+//* Arrays 
+// if you want to save your friends name in a variable how will you do it?
+// you may do like this.
+let friend1 = "Vinayak";
+let friend2 = "Tejesh";
+let friend3 = "Ritesh";
