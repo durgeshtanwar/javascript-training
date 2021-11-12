@@ -7,7 +7,20 @@ let friend1 = "Vinayak";
 let friend2 = "Giriraj";
 let friend3 = "Ritesh";
 
+const shyamuFriends = ['Anshu','Deependra','Avni','Deepanshu', 25];
+
+console.log(shyamuFriends);
+const gaurav = new Array ('Shekhar','Bhawna','Tapsi Pannu','Priya','Jaya');
+console.log(gaurav);
+
+console.log(shyamuFriends[0]);
+console.log(gaurav[3]);
 // array is like a big container where we can put multiple values.
+console.log(gaurav.length);
+
+console.log(gaurav[gaurav.length-1]);
+
+
 
 // const friends = ['Vinayak','Shyam','Gaurav'];
 
@@ -22,6 +35,7 @@ let friend3 = "Ritesh";
 // console.log(years[2]);
 
 // size of the array
+
 
 // console.log(friends.length);
 // console.log(friends[friends.length-1]);
@@ -45,9 +59,10 @@ const calcAge = function(birthYear){
     return 2021 - birthYear;
 }
 const years = [1990,2005,2009,1989,2004,2002];
-
-console.log(calcAge(years[0]));
-console.log(calcAge(years[years.length - 1]));
+console.log('--------------------------');
+console.log(2021-years[0])
+console.log([calcAge(years[0]),calcAge(years[1])]);
+// console.log(calcAge(years[years.length - 1]));
 
 const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
 console.log(ages);
