@@ -66,3 +66,26 @@ console.log(Durgesh);
 // Challenge
 // "Durgesh has 3 friends and his best friend is called Arvind"
 
+// function inside a object.
+// Object methods
+const client = {
+    firstName:'Durgesh', // key also called property
+    lastName:'Tanwar',
+    birthYear:1989,
+    profession:'Teacher',
+    friends:['Arvind','Prashant','Niranjan'],
+    hasDriversLicense: true,
+    // calcAge : function(birthYear){return 2021 - birthYear}
+    calcAge:function() {
+        console.log(this);
+        return 2021-this.birthYear
+    }
+};
+
+// any function which is attached to the object is called method.
+
+const clientage = client.calcAge(1985);
+
+console.log(clientage);
+// console.log(client['calcAge'](1986));
+console.log(client.calcAge());
