@@ -22,7 +22,7 @@ console.log(gaurav[gaurav.length-1]);
 
 
 
-// const friends = ['Vinayak','Shyam','Gaurav'];
+//  const friends = ['Vinayak','Shyam','Gaurav'];
 
 // console.log(friends);
 
@@ -41,9 +41,10 @@ console.log(gaurav[gaurav.length-1]);
 // console.log(friends[friends.length-1]);
 // console.log(`Hello ${friends[2]}`);
 
+
 // replace value in the array,
-// friends[2] = "Durgesh";
-// console.log(friends);
+//  friends[2] = "Durgesh";
+//  console.log(friends);
 
 // we can not replace whole array due to the const declaration.
 //  In array we can have more then one type of data structures.
@@ -68,6 +69,12 @@ const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
 console.log(ages);
 
 // Basic Array Operations
+const subjects = ['science','arts','commerce'];
+console.log(subjects);
+subjects.push('computers');
+console.log(subjects);
+subjects.unshift('Agriculture');
+console.log(subjects);
 
 const friends = ['Vinayak','Shyam','Gaurav'];
 // first method is push. Push adds elements in the array.
@@ -75,11 +82,20 @@ const friends = ['Vinayak','Shyam','Gaurav'];
 // push function returns the new array length 
 // console.log(NewL);
 
+subjects.shift();
+console.log(subjects);
+const pop = subjects.pop();
+console.log(pop);
+console.log(subjects);
+console.log(subjects.shift());
+console.log(subjects);
+
+
 
 //  add in the front of the array.
-friends.unshift('Tejesh');
-console.log(friends);
 
+// console.log(friends);
+console.log(subjects.indexOf('arts'));
 // Remove elements operations
 friends.pop();
 const popped = friends.pop();
@@ -89,7 +105,18 @@ console.log(friends,popped);
 // if we want to remove the first element we have to use the shift method.
 const shifted = friends.shift();
 console.log(friends);
+const sankhlas = ['Prem','Anand','Krishna','Deepshikha','Deepti','Gaurav','Nandini'];
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+if(sankhlas.includes('sourav')){
+    // 
+    
+}
+else {
+    sankhlas.push('sourav');
+}
+console.log(sankhlas);
 
+console.log(sankhlas.includes('Durgesh'));
 console.log(friends.indexOf('Vinayak'));
 friends.push(26);
 friends.push("Ramesh","Suresh");
