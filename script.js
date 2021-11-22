@@ -72,20 +72,41 @@ const client = {
     firstName:'Durgesh', // key also called property
     lastName:'Tanwar',
     birthYear:1989,
+    age:'',
     profession:'Teacher',
     friends:['Arvind','Prashant','Niranjan'],
     hasDriversLicense: true,
     // calcAge : function(birthYear){return 2021 - birthYear}
     calcAge:function() {
-        console.log(this);
-        return 2021-this.birthYear
-    }
+        this.age = 2021 - this.birthYear;
+        // console.log(this);
+        // return 2021-this.birthYear
+        return this.age;
+    },
+    // // summery:function() {
+    // //    return `${this.firstName} ${this.lastName}'s age is ${this.age} and he is ${this.profession} by his profession and he has ${this.friends.length} friends and his best friend is ${this.friends[0]}.`
+
+    //// }
+  
 };
+
+
 
 // any function which is attached to the object is called method.
 
-const clientage = client.calcAge(1985);
+//const clientage = client.calcAge(1989);
 
-console.log(clientage);
+//onsole.log(clientage);
 // console.log(client['calcAge'](1986));
 console.log(client.calcAge());
+console.log(client.age);
+// console.log(client.summery());
+
+// ! challenge 
+//  todo you have to make a sentence like this Durgesh Tanwar's age is 32 and he is Teacher by his profession and he has 3 friends and his best friend is Arvind. using objects.
+
+// if we have to use the age multiple times in our application then we
+// will have to calculate the expression multiple times. this will make a burden on the system if we have to calculate
+// complex things.
+// ""
+// // console.log(`${client.firstName} ${client.lastName}'s age is ${client.age} and he is ${client.profession} by his profession and he has ${client.friends.length} friends and his best friend is ${client.friends[0]}. `)
