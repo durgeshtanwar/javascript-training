@@ -2,23 +2,25 @@
 // Objects
 // we were using array data structure to save the values.
 // lets recap the array.
-const Bio = [
-    'Durgesh',
-    'Tanwar',
-    33,
-    'Software Trainer',
-    ['Arvind','Prashant','Niranjan']
-];
+const Bio = ['Durgesh','Tanwar',33,'Software Trainer', ['Arvind','Prashant','Niranjan']];
 
 // we cant reference by there name in array. to solve this error we have another datastructure here.
 // we call it objects/
-const Durgesh = {
-    firstName:'Durgesh', // key also called property
+const Durgesh = {firstName:'Durgesh', // key also called property
     lastName:'Tanwar',
     age:33,
     profession:'Teacher',
     friends:['Arvind','Prashant','Niranjan']
 };
+
+// const name = {
+//     firstName:'Gaurav',
+//     lastName : 'Sankhla',
+//     age:'19'
+// }
+console.log(Bio);
+// Bio[4];
+
 // Objects have key and value pair
 // for example in object Durgesh key is firstName and the value is Durgesh;
 
@@ -34,6 +36,12 @@ const Durgesh = {
 console.log(Durgesh);
 // there are two wats to retrieve the property of the object.
 // 1st is . and other is bracket.
+
+// console.log(name.firstName);
+console.log(Durgesh.profession);
+
+console.log(Durgesh['lastName']);
+
 console.log(Durgesh.lastName);
 console.log(Durgesh['lastName']);
  const nameKey = 'Name';
@@ -42,9 +50,9 @@ console.log(Durgesh['lastName']);
 // in bracket we can do some sort of operation but in dot method it is not possible.
 // when to use bracket notation or dot notation.
 
-// const getreply = prompt('What do you want to know about Durgesh choose between firstName,lastName,age,profession,friends');
-// console.log(Durgesh[getreply]);
-// console.log(Durgesh.getreply);
+//  const getreply = prompt('What do you want to know about Durgesh choose between firstName,lastName,age,profession,friends');
+//  console.log(Durgesh[getreply]);
+//  console.log(Durgesh.getreply);
 
 // if we just have to access the simple property form the object and we do not have to do any type of the operation we use dot notation and if we have to do any type of the operation then it is wise to use bracket notation.
 
@@ -57,17 +65,36 @@ console.log(Durgesh['lastName']);
 //     console.log('Wront request');
 // }
 
+const name = {
+    firstName:'Gaurav',
+    lastName : 'Sankhla',
+    age:'19'
+}
+name.college = 'Dunger College';
+console.log(name);
+name['class'] = "BA second year";
+console.log(name);
 //  add new property to object and
 Durgesh.location = "India";
 Durgesh['twitter'] = "@DUrgesh";
 
 console.log(Durgesh);
 
+// Gaurav Sankhla 19years old reads in dunger college.
+console.log(name.firstName+" " +name.lastName+ " "+name.age+ " "+ "years old reads in"+ " " + name.college );
+
+console.log(`${name['firstName']} ${name['lastName']} ${name['age']} years old reads in ${name['college']}`)
+
+
+
 // Challenge
 // "Durgesh has 3 friends and his best friend is called Arvind"
 
 // function inside a object.
 // Object methods
+
+
+
 const client = {
     firstName:'Durgesh', // key also called property
     lastName:'Tanwar',
