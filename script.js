@@ -110,10 +110,7 @@ const client = {
         // return 2021-this.birthYear
         return this.age;
     },
-    // // summery:function() {
-    // //    return `${this.firstName} ${this.lastName}'s age is ${this.age} and he is ${this.profession} by his profession and he has ${this.friends.length} friends and his best friend is ${this.friends[0]}.`
-
-    //// }
+    
   
 };
 
@@ -136,4 +133,3 @@ console.log(client.age);
 // will have to calculate the expression multiple times. this will make a burden on the system if we have to calculate
 // complex things.
 // ""
-// // console.log(`${client.firstName} ${client.lastName}'s age is ${client.age} and he is ${client.profession} by his profession and he has ${client.friends.length} friends and his best friend is ${client.friends[0]}. `)
